@@ -1,4 +1,4 @@
-
+# Do not use it yet - this is in pre-alpha (14.01.2018)
 # Batch Action Reducer for ngrx
 
 ## Why?
