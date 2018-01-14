@@ -1,0 +1,12 @@
+{
+  "name": "ngrx-batch-action-reducer",
+  "version": "0.0.1",
+  "description": "Dispatch multiple ngrx actions with one action",
+  "main": "index.ts",
+  "repository": "https://github.com/xipheCom/ngrx-batch-action-reducer.git",
+  "author": "Daniel Milbrandt",
+  "license": "MIT",
+  "dependencies": {
+    "@ngrx/store": "^4.1.1"
+  }
+}
