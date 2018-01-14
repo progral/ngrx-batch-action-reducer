@@ -1,13 +1,13 @@
 import { ActionReducer, Action } from "@ngrx/store";
 
-interface BatchActionType extends Action {
+export interface BatchActionType extends Action {
     payload: Array<any>;
 }
 
 export function BatchAction() {
     return function BatchActionMarker<T extends { new(...args: any[]): BatchActionType }>(constructor: T) {
         return class extends constructor {
-            private isBatchAction: boolean = true;
+            isBatchAction: boolean = true;
         }
     }
 }
