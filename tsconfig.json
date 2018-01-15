@@ -12,11 +12,7 @@
       "node_modules/@types"
     ]
   },
-  "lib": [
-    "ES5",
-    "ES2015",
-    "DOM",
-    "ScriptHost"],
+  "lib": [],
   "include": [
     "src/**/*"
   ],
