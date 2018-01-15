@@ -1,6 +1,6 @@
 {
   "name": "ngrx-batch-action-reducer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dispatch multiple ngrx actions with one action",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,8 +8,10 @@
   "author": "Daniel Milbrandt",
   "license": "MIT",
   "dependencies": {
+    "@ngrx/store": "^4.0.0"
+  },
+  "devDependencies": {
     "@angular/core": "^5.2.0",
-    "@ngrx/store": "^4.1.1",
     "rxjs": "^5.5.6",
     "typescript": "^2.6.2",
     "zone.js": "^0.8.20"
@@ -18,7 +20,6 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "publish": "git add -A && git commit -a && npm publish"
+    "build": "tsc"
   }
 }
