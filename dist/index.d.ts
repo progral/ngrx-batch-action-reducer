@@ -1,4 +1,4 @@
-import { ActionReducer, Action } from "@ngrx/store";
+import { ActionReducer, Action } from "@ngrx/store/src/models";
 export interface BatchActionType extends Action {
     payload: Array<any>;
 }
