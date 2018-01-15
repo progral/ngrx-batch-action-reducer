@@ -19,3 +19,4 @@ export function enableBatchReducer(reduce) {
         }
     };
 }
+//# sourceMappingURL=index.js.map
