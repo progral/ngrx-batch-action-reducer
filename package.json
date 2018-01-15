@@ -17,6 +17,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/tsc"
+    "build": "./node_modules/.bin/tsc",
+    "prepublish": "npm run build && git commit ."
   }
 }
