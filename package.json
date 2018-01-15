@@ -1,6 +1,6 @@
 {
   "name": "ngrx-batch-action-reducer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dispatch multiple ngrx actions with one action",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,11 @@
     "typescript": "^2.6.2",
     "zone.js": "^0.8.20"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "git add -A && git commit -a && npm publish"
   }
 }
