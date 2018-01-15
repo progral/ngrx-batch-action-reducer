@@ -6,7 +6,7 @@
 Sometimes you have many actions which are fired at same time. Imagine an action **LOAD_PRODUCT**. After the product is loaded successfully you would like to add the data into some normalized entities states. E.g. products (for price and productNumber) and productImages (for url and caption), productAttributes, productTags, etc. You do not want to reinvent the wheel, so you use the actions given by the entities branches and dispatch it to store one for one. E.g. `ADD_TO_PRODUCTS`, `ADD_TO_PRODUCTS_IMAGES`, `ADD_TO_PRODUCTS_ATTRIBUTES`, and perhaps many more. This can be very ugly in your redux dev tools, the state is recalculated after every dispatch and your selectors are running hot. A better way would be, if you could dispatch one action and this action fires all the sub actions internally without dispatching this many actions publicly.
 
 ## What it does
-Batch Action Reducer for ngrx is a little module with two parts. An decorator which marks an action as a batch action and a metareducer which react on this marked actions.
+Batch Action Reducer for ngrx is a little module with two parts. A decorator which marks an action as a batch action and a metareducer which react on this marked actions.
 
 ## How to use
 
@@ -17,7 +17,7 @@ npm install --save ngrx-batch-action-reducer
 
 ### 2. Register enableBatchReducer as metareducer
 
-Before you can use an batch action you have to register the metareducer for it which handles the batch actions for you.
+Before you can use a batch action you have to register the metareducer for it which handles the batch actions for you.
 
 Here is an example with ngrx-store-freeze included
 
@@ -74,7 +74,7 @@ export class MultiAction implements Action {
 
 ### 4. Use your batch action
 ```typescript
-//somewhere in you code
+//somewhere in your code
 
 this.store.dispatch(new MultiAction([
     new FooAction(), 
