@@ -62,7 +62,7 @@ export class BarAction implements Action {
 @BatchAction() //<-- this is our batch action
 export class MultiAction implements Action {
     readonly type = MULTI;
-    constructor(payload: [
+    constructor(public payload: [
         FooAction, 
         BarAction,
         //place more actions here
